@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple realtime chatroom</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Delivery Cost</div>
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="distance" placeholder="Change your distance" >
+                    <input type="text" class="form-control" id="weight" placeholder="Change your weight" >
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button" id="costBtn" onclick="deliveryCost()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="message-box">
+                <ul class="list-group list-group-flush" id="message-list"></ul>
+                <div class="info"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../socket.io/socket.io.js"></script>
+
+    <script src="/js/delivery.js"></script>
+</body>
+</html>
